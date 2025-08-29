@@ -5,4 +5,4 @@ import { connectDB } from "../database/connectDB.js";
 // Ensure DB connection is established once
 connectDB();
 
-export const handler = serverless(app);
+export default serverless(app);

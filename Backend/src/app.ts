@@ -33,7 +33,9 @@ app.use("/api",commissionRouter);
 app.use("/api",passwordRouter);
 app.use("/api",tenantProfileRouter);
 app.use("/api",bookingRouter);
-console.log("git test")
+app.get("/api/test", (req, res) => {
+  res.json({ msg: "API working fine 🎉" });
+});
 // app.use("/api",dashboardRoutes);
 
 
