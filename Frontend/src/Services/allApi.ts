@@ -1,6 +1,6 @@
 import commonAPI from "./commonApi"
 
-const baseURL = "http://localhost:5100"
+const baseURL = "https://realestate-git-main-shameems-projects-72400241.vercel.app/api"
 
 export const signup = async(formdata:any)=> {
     return  await commonAPI('post',`${baseURL}/auth/register`,formdata)
